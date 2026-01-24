@@ -1,11 +1,14 @@
 :root {
+  --font-header: Urbanist;
+  --font-header-2: "Courier New", Courier, monospace;
+
   --off-white: #efeeee;
   --green-light: #799184;
   --green-dark: #586e70;
   --purple-light: #a3a3c7;
   --purple-dark: #78789c;
 
-  --shadow-color-light: rgb(255, 255, 255, 0.8);
+  --shadow-color-light: rgb(255, 255, 255, 0.9);
   --shadow-color-dark: rgb(209, 205, 199, 0.5);
   --shadow-color-glow: rgb(255, 255, 255, 0.35);
   --shadow-color-darker: rgba(189, 185, 179, 0.8);
@@ -13,21 +16,99 @@
   background-color: var(--off-white);
 }
 
+/* UTILITIES ----------------------------------------------------- */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.width-60 {
+  width: 60px;
+}
+
+.height-360 {
+  height: 360px;
+}
+
+/* SHADOWS--------------------------------------------------------- */
+
+/* dimensional shadow for transparent png's */
 .shadow-hug {
   filter: drop-shadow(0.5px 0 0 var(--shadow-color-glow))
     drop-shadow(0 0.5px 0 var(--shadow-color-glow))
     drop-shadow(-0.5px 0 0 var(--shadow-color-glow))
     drop-shadow(0 -0.5px 0 var(--shadow-color-glow))
-    drop-shadow(6px 6px 8px var(--shadow-color-darker))
-    drop-shadow(-6px -6px 8px var(--shadow-color-light));
+    drop-shadow(6px 6px 6px var(--shadow-color-dark))
+    drop-shadow(-4px -4px 5px var(--shadow-color-light));
 }
 
+/* dimensional shadow for boxes */
 .shadow-box {
-  width: 200px;
-  height: 150px;
-
   border: 0.5px solid var(--shadow-color-glow);
   box-shadow:
     6px 6px 16px var(--shadow-color-dark),
     -6px -6px 8px var(--shadow-color-light);
+  background-color: var(--purple-light);
+  margin: 16px;
+}
+
+/* dimensional shadow for text */
+.shadow-text {
+  text-shadow:
+    2px 2px 4px var(--shadow-color-darker),
+    -2px -2px 2px var(--shadow-color-light);
+  -webkit-text-stroke: 0.4px var(--shadow-color-glow);
+}
+
+/* this is probably not needed anymore but I want to hold on */
+.shadow-text-negative {
+  background-color: var(--off-white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow:
+    2px 2px 3px var(--shadow-color-light),
+    -1px -1px 3px var(--shadow-color-darker);
+  -webkit-text-stroke: 0.4px var(--shadow-color-glow);
+}
+
+/* TEXT ------------------------------------------------------------ */
+
+h1 {
+  font-family: var(--font-header);
+  font-size: 52px;
+  color: var(--purple-light);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--font-header-2);
+  font-size: 14px;
+}
+
+/* BANNER ----------------------------------------------------------- */
+
+.title-box {
+  padding-right: 70px;
 }
