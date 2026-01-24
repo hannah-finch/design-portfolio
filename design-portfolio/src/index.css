@@ -7,6 +7,7 @@
   --green-dark: #586e70;
   --purple-light: #a3a3c7;
   --purple-dark: #78789c;
+  --gray: #3e3e3e;
 
   --shadow-color-light: rgb(255, 255, 255, 0.9);
   --shadow-color-dark: rgb(209, 205, 199, 0.5);
@@ -14,6 +15,7 @@
   --shadow-color-darker: rgba(189, 185, 179, 0.8);
 
   background-color: var(--off-white);
+  color: var(--gray);
 }
 
 /* UTILITIES ----------------------------------------------------- */
@@ -33,6 +35,14 @@
   justify-content: center;
 }
 
+.apart {
+  justify-content: space-between;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
 .gap-40 {
   gap: 40px;
 }
@@ -49,6 +59,11 @@
   height: 360px;
 }
 
+.padding-h-10per {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 /* SHADOWS--------------------------------------------------------- */
 
 /* dimensional shadow for transparent png's */
@@ -58,7 +73,7 @@
     drop-shadow(-0.5px 0 0 var(--shadow-color-glow))
     drop-shadow(0 -0.5px 0 var(--shadow-color-glow))
     drop-shadow(6px 6px 6px var(--shadow-color-dark))
-    drop-shadow(-4px -4px 5px var(--shadow-color-light));
+    drop-shadow(-6px -6px 6px var(--shadow-color-light));
 }
 
 /* dimensional shadow for boxes */
@@ -67,8 +82,14 @@
   box-shadow:
     6px 6px 16px var(--shadow-color-dark),
     -6px -6px 8px var(--shadow-color-light);
-  background-color: var(--purple-light);
-  margin: 16px;
+}
+
+.shadow-box-top {
+  box-shadow:
+    12px 0px 6px -6px var(--shadow-color-dark),
+    -4px -4px 10px -2px var(--shadow-color-light);
+  border: 0.5px solid var(--shadow-color-glow);
+  border-bottom: none;
 }
 
 /* dimensional shadow for text */
@@ -96,7 +117,7 @@
 h1 {
   font-family: var(--font-header);
   font-size: 52px;
-  color: var(--purple-light);
+  color: var(--purple-dark);
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 600;
@@ -107,8 +128,46 @@ h3 {
   font-size: 14px;
 }
 
-/* BANNER ----------------------------------------------------------- */
+/* BANNER and NAVIGATION ----------------------------------------------------------- */
 
 .title-box {
   padding-right: 70px;
+}
+
+.tab {
+  width: 160px;
+  height: 22px;
+  border-radius: 20px 20px 0 0;
+  margin-top: -42px;
+  padding: 16px 20px 0px 20px;
+  font-family: var(--font-header-2);
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.tab-line {
+  height: 18px;
+  background-color: var(--off-white);
+}
+
+.tab-accent {
+  background-color: var(--green-dark);
+  color: var(--off-white);
+  margin-left: auto;
+}
+
+.tab:hover {
+  height: 40px;
+  margin-top: -56px;
+  transition: 0.25s;
+}
+
+.tab-accent:hover {
+  height: 36px;
+  margin-top: -56px;
+}
+
+.tab-active {
+  height: 32px;
+  background-color: var(--off-white);
 }
