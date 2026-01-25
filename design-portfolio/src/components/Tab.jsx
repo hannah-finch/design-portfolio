@@ -1,0 +1,28 @@
+import { NavLink } from "react-router-dom";
+
+function Tab(props) {
+  const text = props.text;
+  const link = props.link;
+  const accent = props.accent;
+
+  return (
+    <NavLink
+      to={link}
+      className="tab shadow-box-top flex-column"
+      style={{
+        backgroundColor: accent ? "var(--green-dark)" : "var(--off-white)",
+        marginLeft: accent ? "auto" : "none",
+      }}
+    >
+      <p style={{ marginLeft: "16px", marginTop: "14px" }}>{text}</p>
+      <div
+        className={
+          accent ? "hide shadow-top-line-green" : "hide shadow-top-line"
+        }
+        style={{ marginTop: "auto" }}
+      ></div>
+    </NavLink>
+  );
+}
+
+export default Tab;

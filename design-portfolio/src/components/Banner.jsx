@@ -1,6 +1,7 @@
 function Banner() {
   return (
-    <header className="height-360 flex-column center">
+    <header className="flex-column center" style={{height:'340px'}}>
+      <img src="./src/assets/flower-banner.png" className="header-img"></img>
       <div className="flex-row title-box center gap-40">
         <img
           src="./src/assets/flower-1-03.png"

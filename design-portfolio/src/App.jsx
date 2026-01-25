@@ -10,7 +10,7 @@ function App() {
     <>
       <Banner />
       <Navbar />
-      <main>
+      <main className="shadow-box-top" style={{marginTop: '-1px'}}>
         <Outlet />
       </main>
       <Footer />
