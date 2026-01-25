@@ -114,27 +114,33 @@
   -webkit-text-stroke: 0.4px var(--shadow-color-glow);
 }
 
-/* this is probably not needed anymore but I want to hold on */
 .shadow-text-negative {
   background-color: var(--off-white);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow:
-    2px 2px 3px var(--shadow-color-light),
-    -1px -1px 3px var(--shadow-color-darker);
+    1px 1px 2px var(--shadow-color-light),
+    -1px -1px 4px var(--shadow-color-darker);
   -webkit-text-stroke: 0.4px var(--shadow-color-glow);
 }
 
 /* TEXT ------------------------------------------------------------ */
 
-h1 {
+h1, h2 {
   font-family: var(--font-header);
-  font-size: 52px;
-  color: var(--purple-dark);
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 600;
+}
+
+h1 {
+  font-size: 52px;
+  color: var(--purple-dark);
+}
+
+h2 {
+  font-size: 40px;
 }
 
 h3 {

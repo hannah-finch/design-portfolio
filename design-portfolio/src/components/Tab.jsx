@@ -14,7 +14,7 @@ function Tab(props) {
         marginLeft: accent ? "auto" : "none",
       }}
     >
-      <p style={{ marginLeft: "16px", marginTop: "14px" }}>{text}</p>
+      <p style={{ marginLeft: "16px", marginTop: "14px", color: accent ? 'var(--off-white)' : null }}>{text}</p>
       <div
         className={
           accent ? "hide shadow-top-line-green" : "hide shadow-top-line"

@@ -1,10 +1,11 @@
+import H2 from "../components/H2";
+
 function ContactPage() {
   return (
     <>
-
-    <h1>Contact</h1>
+      <H2 text="Contact" color="var(--purple-light)"></H2>
     </>
-  )
-};
+  );
+}
 
 export default ContactPage;

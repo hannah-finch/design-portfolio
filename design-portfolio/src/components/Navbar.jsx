@@ -8,7 +8,7 @@ function Navbar() {
         className="flex-row"
         style={{
           height: "60px",
-          padding: '0 10%',
+          padding: '0 6%',
           alignItems: "flex-end",
           justifyContent: "flex-start",
         }}

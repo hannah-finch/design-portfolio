@@ -10,7 +10,7 @@ function App() {
     <>
       <Banner />
       <Navbar />
-      <main className="shadow-box-top" style={{marginTop: '-1px'}}>
+      <main className="shadow-box-top flex-column" style={{marginTop: '-1px', padding: '60px 10%', alignItems: 'flex-start'}}>
         <Outlet />
       </main>
       <Footer />
