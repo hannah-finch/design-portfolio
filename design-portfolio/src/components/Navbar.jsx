@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 import Tab from "./Tab";
 
 function Navbar() {
@@ -8,7 +8,7 @@ function Navbar() {
         className="flex-row"
         style={{
           height: "60px",
-          padding: '0 6%',
+          padding: "0 6%",
           alignItems: "flex-end",
           justifyContent: "flex-start",
         }}

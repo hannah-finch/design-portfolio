@@ -1,0 +1,17 @@
+.tab {
+  width: 160px;
+  height: 36px;
+  border-radius: 20px 20px 0 0;
+  font-family: var(--font-header-2);
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.tab:hover {
+  height: 44px;
+  transition: 0.25s;
+}
+
+.active .hide {
+  display: none;
+}
