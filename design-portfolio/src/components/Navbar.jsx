@@ -15,6 +15,8 @@ function Navbar() {
       >
         <Tab text="work" link="/"></Tab>
         <Tab text="about" link="/about"></Tab>
+        <Tab text="branding" link="/branding"></Tab>
+
         <Tab text="contact" link="/contact" accent></Tab>
       </nav>
     </>

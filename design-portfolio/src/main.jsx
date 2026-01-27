@@ -9,6 +9,8 @@ import AboutPage from "./pages/AboutPage.jsx";
 import WorkPage from "./pages/WorkPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 
+import BrandingPage from "./pages/work-subpages/BrandingPage.jsx"
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />,
+      },
+            {
+        path: "/branding",
+        element: <BrandingPage />,
       },
     ],
   },

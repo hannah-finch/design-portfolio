@@ -1,6 +1,7 @@
 :root {
-  --font-header: Urbanist;
+  --font-header: Urbanist, sans-serif;
   --font-header-2: "Courier New", Courier, monospace;
+  --font-body:  inter, sans-serif;
 
   --off-white: #efeeee;
   --green-light: #799184;
@@ -19,13 +20,15 @@
 body {
   background-color: var(--off-white);
   color: var(--gray);
+  font-family: var(--font-body);
 }
 main {
   margin-top: -1px;
+  padding: 40px 10%;
 }
 
 section {
-  padding: 110px 10%;
+  padding: 100px 0;
 }
 
 /* TEXT ------------------------------------------------------------ */
@@ -53,9 +56,8 @@ h3 {
 }
 
 p {
-  font-family: inter;
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.2;
   margin: 14px 0 0;
 }
 
@@ -106,8 +108,8 @@ p {
 .shadow-box {
   border: 0.5px solid var(--shadow-color-glow);
   box-shadow:
-    6px 6px 16px var(--shadow-color-dark),
-    -6px -6px 16px var(--shadow-color-light);
+    4px 4px 16px var(--shadow-color-dark),
+    -5px -5px 12px var(--shadow-color-light);
 }
 
 .shadow-box-top {
@@ -147,4 +149,11 @@ p {
     1px 1px 2px var(--shadow-color-light),
     -1px -1px 4px var(--shadow-color-darker);
   -webkit-text-stroke: 0.4px var(--shadow-color-glow);
+}
+
+/* Branding grid ------------------------------------ */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr .30fr 1fr;
 }
