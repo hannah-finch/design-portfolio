@@ -9,7 +9,10 @@ import AboutPage from "./pages/AboutPage.jsx";
 import WorkPage from "./pages/WorkPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 
-import BrandingPage from "./pages/work-subpages/BrandingPage.jsx"
+import BrandingPage from "./pages/work-subpages/BrandingPage.jsx";
+import CommunicationPage from "./pages/work-subpages/CommunicationPage.jsx";
+import WebDevelopmentPage from "./pages/work-subpages/WebDevelopmentPage.jsx";
+import GameDevelopmentPage from "./pages/work-subpages/GameDevelopmentPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,9 +32,21 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <ContactPage />,
       },
-            {
+      {
         path: "/branding",
         element: <BrandingPage />,
+      },
+      {
+        path: "/communication",
+        element: <CommunicationPage />,
+      },
+      {
+        path: "/webdevelopment",
+        element: <WebDevelopmentPage />,
+      },
+      {
+        path: "/gamedevelopment",
+        element: <GameDevelopmentPage />,
       },
     ],
   },

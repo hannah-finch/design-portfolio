@@ -1,7 +1,7 @@
 :root {
   --font-header: Urbanist, sans-serif;
   --font-header-2: "Courier New", Courier, monospace;
-  --font-body:  inter, sans-serif;
+  --font-body: inter, sans-serif;
 
   --off-white: #efeeee;
   --green-light: #799184;
@@ -37,17 +37,19 @@ h1,
 h2 {
   font-family: var(--font-header);
   text-transform: uppercase;
-  letter-spacing: 4px;
-  font-weight: 600;
 }
 
 h1 {
   font-size: 52px;
   color: var(--purple-dark);
+  letter-spacing: 4px;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 500;
 }
 
 h3 {
@@ -59,6 +61,10 @@ p {
   font-size: 15px;
   line-height: 1.2;
   margin: 14px 0 0;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /* UTILITIES ----------------------------------------------------- */
@@ -90,6 +96,12 @@ p {
 
 .spacer {
   height: 32px;
+}
+
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 /* SHADOWS--------------------------------------------------------- */
@@ -151,9 +163,3 @@ p {
   -webkit-text-stroke: 0.4px var(--shadow-color-glow);
 }
 
-/* Branding grid ------------------------------------ */
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr .30fr 1fr;
-}
