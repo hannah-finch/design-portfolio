@@ -9,20 +9,16 @@ function BrandingCard(props) {
   return (
     <div
       className="shadow-box flex-column start"
-      style={{ padding: "20px 26px", gap: "10px", width: '100%', boxSizing:'border-box'}}
+      style={{ padding: "26px", width: '100%', boxSizing:'border-box'}}
     >
-      <H2 text={name} color="var(--purple-light)"></H2>
+      <H2 text={name} color="var(--gray-light)"></H2>
       <div>
-        <h3 className="bold">INDUSTRY: </h3>
-        <h3>{industry}</h3>
-      </div>
-      <div>
-        <h3 className="bold">VIBE: </h3>
-        <h3>{vibe}</h3>
-      </div>
-      <div>
-        <h3 className="bold">NOTES: </h3>
-        <h3>{notes}</h3>
+        <h3 style={{marginTop: '16px'}}>INDUSTRY: </h3>
+        {industry}
+        <h3 style={{marginTop: '10px'}}>VIBE: </h3>
+        {vibe}
+        <h3 style={{marginTop: '10px'}}>NOTES: </h3>
+        {notes}
       </div>
     </div>
   );

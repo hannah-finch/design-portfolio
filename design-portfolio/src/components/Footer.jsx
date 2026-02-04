@@ -3,13 +3,13 @@ function Footer() {
     <footer>
       <section
         className="shadow-box"
-        style={{ backgroundColor: "var(--green-dark)", gap: "10px" }}
+        style={{ backgroundColor: "var(--green-dark)", gap: "10px",  }}
       >
-        <h3 style={{ color: "black", opacity: ".4", textAlign: "center" }}>
+        <div style={{ color: "black", opacity: ".4", textAlign: "center", lineHeight: '1' }}>
           Designed and coded by Hannah B Finch
           <br />
           Copyright © 2026 Hannah B Finch
-        </h3>
+        </div>
       </section>
     </footer>
   );
