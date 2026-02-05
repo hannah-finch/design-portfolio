@@ -21,7 +21,7 @@ function BrandingSectionLeft(props) {
           style={{ width: "100%" }}
           className="shadow-hug"
         ></img>
-        <img src="../src/assets/arrows.png" style={{ width: "100%" }}></img>
+        <img src="../src/assets/graphic-arrows.png" style={{ width: "100%" }}></img>
         <div className="flex-column center">
           <BrandingCard
             name={name}

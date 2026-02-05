@@ -9,7 +9,7 @@ function Banner() {
         style={{ gap: "40px", paddingRight: "70px", marginTop: "40px" }}
       >
         <img
-          src="./src/assets/flower-1-03.png"
+          src="./src/assets/graphic-flower-1.png"
           className="shadow-hug"
           style={{ width: "60px" }}
         ></img>

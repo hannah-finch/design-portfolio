@@ -33,7 +33,7 @@ function BrandingSectionRight(props) {
             }}
           ></img>
         </div>
-        <img src="../src/assets/arrows.png" style={{ width: "100%", transform: "scaleX(-1)" }}></img>
+        <img src="../src/assets/graphic-arrows.png" style={{ width: "100%", transform: "scaleX(-1)" }}></img>
       <img
         src={imageMain}
         style={{ width: "100%" }}

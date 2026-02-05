@@ -14,7 +14,7 @@
   --gray-light: #d6d6d6;
 
 
-  --shadow-color-light: rgb(255, 255, 255, 0.9);
+  --shadow-color-light: rgb(255, 255, 255, 0.6);
   --shadow-color-dark: rgb(209, 205, 199, 0.5);
   --shadow-color-glow: rgb(255, 255, 255, 0.35);
   --shadow-color-darker: rgba(189, 185, 179, 0.8);
@@ -35,7 +35,7 @@ main {
 }
 
 section {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 /* TEXT ------------------------------------------------------------ */
