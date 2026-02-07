@@ -1,16 +1,12 @@
 function Footer() {
   return (
-    <footer>
-      <section
+    <footer
         className="shadow-box"
-        style={{ backgroundColor: "var(--green-dark)", gap: "10px",  }}
-      >
-        <div style={{ color: "black", opacity: ".4", textAlign: "center", lineHeight: '1' }}>
-          Designed and coded by Hannah B Finch
-          <br />
+        style={{ backgroundColor: "var(--green-dark)",   color: "var(--off-white)",  textAlign: "center", lineHeight: '1', padding: '10px' }}>
+          Designed and coded by Hannah B Finch,
           Copyright © 2026 Hannah B Finch
-        </div>
-      </section>
+
+
     </footer>
   );
 }

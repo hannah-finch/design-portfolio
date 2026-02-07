@@ -14,8 +14,8 @@
   --gray-light: #d6d6d6;
 
 
-  --shadow-color-light: rgb(255, 255, 255, 0.6);
-  --shadow-color-dark: rgb(209, 205, 199, 0.5);
+  --shadow-color-light: rgb(255, 255, 255, 0.7);
+  --shadow-color-dark: rgb(209, 205, 199, 0.3);
   --shadow-color-glow: rgb(255, 255, 255, 0.35);
   --shadow-color-darker: rgba(189, 185, 179, 0.8);
   --shadow-color-green: #7fc1c7ee;
@@ -31,11 +31,11 @@ body {
 }
 main {
   margin-top: -1px;
-  padding: 40px 10%;
+  /* padding: 40px 10%; */
 }
 
 section {
-  padding: 80px 0;
+  padding: 80px 10%;
 }
 
 /* TEXT ------------------------------------------------------------ */
@@ -129,7 +129,14 @@ p {
   border: 0.5px solid var(--shadow-color-glow);
   box-shadow:
     4px 4px 16px var(--shadow-color-dark),
-    -5px -5px 12px var(--shadow-color-light);
+    -4px -4px 12px var(--shadow-color-light);
+}
+
+.shadow-box-inset {
+  border: 0.5px solid var(--shadow-color-glow);
+  box-shadow:
+    inset 4px 4px 16px var(--shadow-color-light),
+    inset -5px -5px 12px 4px var(--shadow-color-dark);
 }
 
 .shadow-box-top {
